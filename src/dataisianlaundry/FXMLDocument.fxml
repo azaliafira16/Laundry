@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="532.0" prefWidth="425.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dataisianlaundry.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Label layoutX="136.0" layoutY="14.0" prefHeight="51.0" prefWidth="156.0" text="Data Isian Laundry">
+         <font>
+            <Font name="Broadway" size="14.0" />
+         </font></Label>
+      <Label layoutX="32.0" layoutY="87.0" prefHeight="17.0" prefWidth="48.0" text="Nama " />
+      <Label layoutX="32.0" layoutY="112.0" prefHeight="17.0" prefWidth="48.0" text="Alamat" />
+      <Label layoutX="32.0" layoutY="155.0" prefHeight="17.0" prefWidth="80.0" text="berat cucian" />
+      <Label layoutX="32.0" layoutY="200.0" prefHeight="17.0" prefWidth="94.0" text="nomor telepon" />
+      <Label layoutX="15.0" layoutY="238.0" text="Pilihan Paket Laundry" />
+      <Label layoutX="8.0" layoutY="296.0" text="Tanggal Pengambilan " />
+      <TextField fx:id="idnama" layoutX="136.0" layoutY="83.0" />
+      <TextField fx:id="idalamat" layoutX="136.0" layoutY="116.0" />
+      <TextField fx:id="idcuci" layoutX="136.0" layoutY="151.0" />
+      <TextField fx:id="idnomor" layoutX="136.0" layoutY="196.0" />
+      <TextField fx:id="idtanggal" layoutX="144.0" layoutY="292.0" />
+      <RadioButton fx:id="idck" layoutX="145.0" layoutY="238.0" mnemonicParsing="false" text="Cuci Kering">
+         <toggleGroup>
+            <ToggleGroup fx:id="pilihan1" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="idcks" layoutX="242.0" layoutY="238.0" mnemonicParsing="false" text="Cuci Kering Setrika" toggleGroup="$pilihan1" />
+      <RadioButton fx:id="ids" layoutX="148.0" layoutY="266.0" mnemonicParsing="false" text="Setrika" toggleGroup="$pilihan1" />
+      <Button fx:id="proses" layoutX="148.0" layoutY="334.0" mnemonicParsing="false" onAction="#proses" text="Oke " />
+      <Button fx:id="hapus" layoutX="233.0" layoutY="334.0" mnemonicParsing="false" onAction="#hapus" text="Hapus" />
+      <TextArea fx:id="idhasil" layoutX="104.0" layoutY="381.0" prefHeight="122.0" prefWidth="247.0" />
+    </children>
+</AnchorPane>
